@@ -1,0 +1,17 @@
+\\ Main module
+START
+    WRITE "INTRODUIT UNE VALEUR ENTIERE"
+    READ VALEUR
+
+    IF VALEUR <10 THEN 
+        WRITE "BONJOUR"
+    ELSE 
+        IF VALEUR %10=0 THEN
+            WRITE "A DEMAIN" 
+        ELSE   
+            WRITE "AU REVOIR" 
+        ENDIF
+    ENDIF  
+
+END
+
