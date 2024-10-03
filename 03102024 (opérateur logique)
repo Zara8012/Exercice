@@ -1,0 +1,31 @@
+\\ Main module
+START
+    WRITE "ENCODER UNE VALEUR"
+    READ VALEUR
+
+    IF VALEUR > 0 AND VALEUR < 5 THEN 
+            WRITE ">0 AND <5"
+        ELSE IF VALEUR = 7 OR VALEUR = 10 THEN
+            WRITE "= 7 OU = 10" 
+        ELSE IF (VALEUR % 20 = 0 OR VALEUR = 30) AND VALEUR < 100 THEN
+            WRITE "OK"
+        ELSE 
+            WRITE "MERCI"
+    ENDIF                               
+ END
+
+ET
+    0    1
+----------------
+0   0    0
+1   0    1
+
+OU
+    0    1
+----------------
+0   0    1    
+1   1    1
+
+
+
+https://github.com/alegorix/algo
