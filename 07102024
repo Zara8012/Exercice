@@ -33,4 +33,76 @@ FINSI
 FIN
 
 
+
+++++
+
 https://alegorix.coach/cours/javascript/
+
+++++
+START
+    apprenants = ["Julie", "Stéphane", "Mostapha", "Claudiu", "Son"]
+        WRITE apprenants[1] + " EST DANS LA CLASSE DE DEV"
+END
+
+++++
+
+\\ Main module
+START
+    APPRENANTS = ["Julie", "Stéphane", "Mostapha", "Claudiu", "Son"]
+    COMPETENCES =  [" HTML" , " CSS" , " JAVASCRIPT" , " PHP" , " JAVA"]    
+        WRITE apprenants[1] + COMPETENCES [5]
+END
+
+++++
+\\ Module principal
+
+START
+    APPRENANTS = [["David", "Justine", "Valentin","Axel", "Redouane"], ["Julie", "Stéphane", "Mostapha", "Claudiu", "Son"]]
+  
+    FOR i = 1 TO 2 DO
+        FOR y = 1 TO 5 DO
+            WRITE APPRENANTS[i][y] 
+        ENDFOR 
+    ENDFOR
+END  
+
+++++
+
+\\ Main module
+START
+
+    NOMBRES = [[18,55], [29,13], [-2,15],[66,44]]
+    WRITE MAX(NOMBRES)
+END
+
+
+++++
+\\ Module principal
+
+START
+    APPRENANTS = [["David", "Justine", "Valentin","Axel", "Redouane"], ["Julie", "Stéphane", "Mostapha", "Claudiu", "Son"]]
+  
+    FOR i = 1 TO 1 DO
+        
+            WRITE APPRENANTS[i] + " EST CHEZ LES 2024" 
+    ENDFOR 
+    
+        FOR y = 2 TO 2 DO
+            WRITE APPRENANTS[y] + " EST CHEZ LES 2023"
+        ENDFOR
+END  
+
+
+++++
+\\ Module principal
+START
+    WRITE HELLO(JACQUES) 
+END
+
+\\ Auxiliary module HELLO
+ENTER   PRENOM
+    WRITE JACQUES + " BIENVENU ET BONJOUR"  
+RETURN  WRITE 
+
+
+
