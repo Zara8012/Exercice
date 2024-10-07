@@ -1,0 +1,33 @@
+CAS : utilisation d’une certaine typographie majuscule ou minuscule. 
+
+  \\ Module principal
+DÉBUT
+
+
+    ECRIRE "ECRIS UN NOMBRE MAN"
+    LIRE NOMBRE
+     TANTQUE NOMBRE != -1 FAIRE
+        ECRIRE NOMBRE
+        NOMBRE = NOMBRE -1
+FINTANTQUE
+ECRIRE "FIN DE LA BOUCLE"
+FIN
+
++++++
+
+  \\ Module principal
+
+DÉBUT
+    PRIX = 7
+    ECRIRE "TENTE TA CHANCE MAN"
+    LIRE NOMBRE
+    SI NOMBRE = PRIX ALORS
+    ECRIRE "WINNER"    
+SINON SI NOMBRE > PRIX ALORS
+        ECRIRE "T'ES DANS LES AIRS MAN !"
+
+SINON SI NOMBRE < PRIX ALORS
+      ECRIRE "T'ES DANS LA TERRE MAN"
+
+FINSI
+FIN
