@@ -155,4 +155,19 @@ SINON SI
     FINSI         
 RETOURNER SOMME
 
+alternative
+\\ Module auxiliaire AB
+ENTRER A, B
+
+SI A > B ALORS
+   ECRIRE "A = 0"
+SINON SI B < A ALORS
+    ECRIRE "B = 1"
+FINSI
+             
+RETOURNER
+++++
+
+
+
 
