@@ -43,13 +43,16 @@ START
 END
 
 ++++
+\\ Module principal
+DÉBUT
 
-\\ Main module
-START
-    APPRENANTS = ["Julie", "Stéphane", "Mostapha", "Claudiu", "Son"]
-    COMPETENCES =  [" HTML" , " CSS" , " JAVASCRIPT" , " PHP" , " JAVA"]    
-        WRITE apprenants[1] + COMPETENCES [5]
-END
+apprenants = ["David", "Justine", "Valentin","Axel", "Redouane"]
+competence = ["html", "css", "javascript", "php", "Java"]  
+
+POUR nombre = 1 JUSQU'A 5 FAIRE
+    ECRIRE apprenants [nombre], "est dans la calsse de dev " + competence [nombre]
+FINPOUR
+FIN  
 
 ++++
 \\ Module principal
@@ -65,13 +68,14 @@ START
 END  
 
 ++++
+\\ Module principal
+DÉBUT
 
-\\ Main module
-START
-
-    NOMBRES = [[18,55], [29,13], [-2,15],[66,44]]
-    WRITE MAX(NOMBRES)
-END
+nombres = [[18,55], [29,13], [-2,15],[66,44]]  
+    POUR chiffres = 1 JUSQU'A 4 FAIRE
+        ECRIRE max(nombres[chiffres])       
+    FINPOUR
+FIN  
 
 
 ++++
@@ -90,17 +94,65 @@ START
         ENDFOR
 END  
 
+\\ ex 2
+
+DÉBUT
+
+APPRENANTS = [["David", "Justine", "Valentin","Axel", "Redouane"], ["Julie", "Stéphane", "Mostapha", "Claudiu", "Son"]]
+
+POUR i = 1 JUSQU'A 1 FAIRE
+ECRIRE APPRENANTS[i] + " EST CHEZ LES 2024"
+FINPOUR 
+
+POUR y = 2 JUSQU'A 2 FAIRE
+       
+ECRIRE APPRENANTS[y] + " EST CHEZ LES 2023"
+FINPOUR
+
+FIN 
+
 
 ++++
+
 \\ Module principal
-START
-    WRITE HELLO(JACQUES) 
-END
+DÉBUT
 
-\\ Auxiliary module HELLO
-ENTER   PRENOM
-    WRITE JACQUES + " BIENVENU ET BONJOUR"  
-RETURN  WRITE 
+LIRE PRENOM
+ECRIRE HELLO(PRENOM) 
 
+FIN 
+
+\\ Module auxiliaire HELLO
+ENTRER PRENOM
+
+    ECRIRE
+     
+RETOURNER "Bonjour et bienvenue " + PRENOM
+
+++++++
+
+\\ Module principal
+
+DÉBUT
+
+ECRIRE "QUELLE EST LA VALEUR DE A ?"    
+LIRE A
+ECRIRE "QUELLE EST LA VALEUR DE B ?"
+LIRE B
+ECRIRE AB(A,B) 
+
+FIN 
+
+\\ Module auxiliaire AB
+
+ENTRER A, B
+
+SI A > B ALORS
+    SOMME = 0
+SINON SI 
+        B > A = ALORS
+           SOMME = 1
+    FINSI         
+RETOURNER SOMME
 
 
