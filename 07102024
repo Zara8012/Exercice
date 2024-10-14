@@ -143,19 +143,7 @@ ECRIRE AB(A,B)
 
 FIN 
 
-\\ Module auxiliaire AB
 
-ENTRER A, B
-
-SI A > B ALORS
-    SOMME = 0
-SINON SI 
-        B > A = ALORS
-           SOMME = 1
-    FINSI         
-RETOURNER SOMME
-
-alternative
 \\ Module auxiliaire AB
 ENTRER A, B
 
