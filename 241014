@@ -29,3 +29,24 @@ PHRASE = PRENOM + " est dans la classe " + CLASSE + " et connait le "
         FINSI
      FINPOUR
 RETOURNER   PHRASE
+++++
+
+\\ Module principal
+DÉBUT
+  
+TRI = [454, 4, 59, 68, 1 ,0 ,-1 ,56, 7, 9]
+NBCELL = COMPTER(TRI)
+TANTQUE NBCELL > 0 FAIRE 
+    CELL = 1
+    TANTQUE CELL != NBCELL FAIRE              
+        SI  TRI[CELL] > TRI[CELL+1] ALORS
+            intermed = TRI[CELL+1]
+            TRI[CELL+1] = TRI[CELL]
+            TRI[CELL] = intermed    
+        FINSI
+    CELL=CELL+1
+    FINTANTQUE
+    NBCELL = NBCELL -1 
+FINTANTQUE
+ECRIRE TRI   
+FIN
