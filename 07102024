@@ -130,30 +130,29 @@ ENTRER PRENOM
 RETOURNER "Bonjour et bienvenue " + PRENOM
 
 ++++++
-
 \\ Module principal
-
 DÉBUT
-
-ECRIRE "QUELLE EST LA VALEUR DE A ?"    
-LIRE A
-ECRIRE "QUELLE EST LA VALEUR DE B ?"
-LIRE B
-ECRIRE AB(A,B) 
+ECRIRE "DONNE A"
+LIRE NB1
+ECRIRE "DONNE B"
+LIRE NB2  
+ECRIRE AB(NB1,NB2) 
 
 FIN 
 
 
 \\ Module auxiliaire AB
-ENTRER A, B
+ENTRER A,B
 
 SI A > B ALORS
-   ECRIRE "A = 0"
-SINON SI B < A ALORS
-    ECRIRE "B = 1"
+    REPONSE = "0"
+SINON
+    SI B > A ALORS
+        REPONSE = "1"
 FINSI
-             
-RETOURNER
+    FINSI
+
+RETOURNER REPONSE
 ++++
 
 
