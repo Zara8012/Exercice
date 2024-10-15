@@ -1,0 +1,28 @@
+\\ Module principal
+DÉBUT
+
+PRIX = aléatoire(0,100)
+ECRIRE PRIX
+ECRIRE "Faites une tentative de prix entre 0 et 100, inestimable participant"
+LIRE TENTATIVE
+PROPOSITION = 10 
+                  
+TANTQUE TENTATIVE != PRIX FAIRE
+    PROPOSITION = PROPOSITION -1
+ 
+SI TENTATIVE < PRIX ALORS
+        ECRIRE "C'est plus. Tu as encore " + PROPOSITION + " essais."
+    SINON
+        SI TENTATIVE > PRIX ALORS
+            ECRIRE "C'est moins. Tu as encore " + PROPOSITION + " essais." 
+            SINON
+                ECRIRE "Gagné!"
+        FINSI
+FINSI
+FINTANTQUE 
+     SI PROPOSITION = 10 ALORS
+ECRIRE "You have lost, pussy"
+    FINSI 
+
+
+FIN
